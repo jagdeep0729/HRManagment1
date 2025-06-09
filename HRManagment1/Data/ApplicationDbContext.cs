@@ -20,5 +20,6 @@ namespace HRManagment1.Data
         public DbSet<HRManagment1.Models.LeaveRecord> LeaveRecord { get; set; } = default!;
         public DbSet<HRManagment1.Models.Payroll> Payroll { get; set; } = default!;
         public DbSet<HRManagment1.Models.TrainingRecords> TrainingRecords { get; set; } = default!;
+        public DbSet<HRManagment1.Models.JobOpeningApplicant> JobOpeningApplicant { get; set; } = default!;
     }
 }

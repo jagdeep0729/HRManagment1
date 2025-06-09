@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HRManagment1.Data;
 using HRManagment1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HRManagment1.Controllers
 {
@@ -18,8 +19,8 @@ namespace HRManagment1.Controllers
         {
             _context = context;
         }
-
-        // GET: JobOpenings
+   
+        // get: jobopenings
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.JobOpening.Include(j => j.JobPositions);

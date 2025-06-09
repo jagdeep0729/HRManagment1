@@ -13,5 +13,6 @@ namespace HRManagment1.Models
         public DateOnly OpenDate { get; set; }
         public DateOnly CloseDate { get; set; }
         public String Status { get; set; }
+        public ICollection<JobOpeningApplicant> JobOpeningApplicant { get; set; }
     }
 }

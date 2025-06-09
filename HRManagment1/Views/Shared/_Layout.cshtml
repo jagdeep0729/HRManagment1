@@ -14,7 +14,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HRManagment1</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -25,6 +25,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
+                        
+                        @if(User.IsInRole("Applicant"))
+                        {
+                            <li>
+                                <a class=" nav-link text-dark"asp-area="" asp-controller="Applicants" asp-action="MyProfile">My Profile</a>
+                            </li>
+
+                            <li>
+                                <a class="nav-link text-black-dark"asp-area="" asp-controller="JobOpeningApplicant" asp-action="MyApplications">My Applications</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -36,6 +48,9 @@
             @RenderBody()
         </main>
     </div>
+
+  
+    
 
     <footer class="border-top footer text-muted">
         <div class="container">

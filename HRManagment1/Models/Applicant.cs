@@ -10,5 +10,6 @@ namespace HRManagment1.Models
         public String Email { get; set; }
         public String Resume { get; set; }
         public DateOnly ApplicantDate { get; set; }
+        public ICollection<JobOpeningApplicant> JobOpeningApplicant { get; set; }
     }
 }
