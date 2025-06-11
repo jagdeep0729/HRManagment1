@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P+uCitPuFHNhklgYcDA6fIjsrwXQZnSB96xG6LIK/H4=",
+  "Hash": "mq6Hciofp4T1Ti467EfxQW1S7UCcXlwXdJanPl4/5DQ=",
   "Source": "HRManagment1",
   "BasePath": "_content/HRManagment1",
   "Mode": "Default",
@@ -1359,6 +1359,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hr manament image 1.jpg",
+      "SourceId": "HRManagment1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\",
+      "BasePath": "_content/HRManagment1",
+      "RelativePath": "images/Hr manament image 1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cblug4c6s1",
+      "Integrity": "mFg7hX5n3VvqyuEPIqkiZdAra8v9ExHjR7lZgKo01Qk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Hr manament image 1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\HRM 2.jpg",
+      "SourceId": "HRManagment1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\",
+      "BasePath": "_content/HRManagment1",
+      "RelativePath": "images/HRM 2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vgafx1mgc7",
+      "Integrity": "v6eK9ma4sb4KEgb1ll/58AT0GshAOOxn/Sj9BcrBs0I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HRM 2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hrm3.jpg",
+      "SourceId": "HRManagment1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\",
+      "BasePath": "_content/HRManagment1",
+      "RelativePath": "images/Hrm3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pw3sljrizu",
+      "Integrity": "yZMKY2FA+/Erc8euElmyhBztfXK4c582DIjZ4BzKyko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Hrm3.jpg"
     },
     {
       "Identity": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\js\\site.js",
@@ -5125,6 +5188,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "images/Hr manament image 1.cblug4c6s1.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hr manament image 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mFg7hX5n3VvqyuEPIqkiZdAra8v9ExHjR7lZgKo01Qk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:15:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cblug4c6s1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Hr manament image 1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mFg7hX5n3VvqyuEPIqkiZdAra8v9ExHjR7lZgKo01Qk="
+        }
+      ]
+    },
+    {
+      "Route": "images/Hr manament image 1.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hr manament image 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mFg7hX5n3VvqyuEPIqkiZdAra8v9ExHjR7lZgKo01Qk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:15:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mFg7hX5n3VvqyuEPIqkiZdAra8v9ExHjR7lZgKo01Qk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HRM 2.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\HRM 2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v6eK9ma4sb4KEgb1ll/58AT0GshAOOxn/Sj9BcrBs0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:16:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v6eK9ma4sb4KEgb1ll/58AT0GshAOOxn/Sj9BcrBs0I="
+        }
+      ]
+    },
+    {
+      "Route": "images/HRM 2.vgafx1mgc7.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\HRM 2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v6eK9ma4sb4KEgb1ll/58AT0GshAOOxn/Sj9BcrBs0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:16:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgafx1mgc7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HRM 2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v6eK9ma4sb4KEgb1ll/58AT0GshAOOxn/Sj9BcrBs0I="
+        }
+      ]
+    },
+    {
+      "Route": "images/Hrm3.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hrm3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yZMKY2FA+/Erc8euElmyhBztfXK4c582DIjZ4BzKyko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yZMKY2FA+/Erc8euElmyhBztfXK4c582DIjZ4BzKyko="
+        }
+      ]
+    },
+    {
+      "Route": "images/Hrm3.pw3sljrizu.jpg",
+      "AssetFile": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hrm3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yZMKY2FA+/Erc8euElmyhBztfXK4c582DIjZ4BzKyko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 07:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pw3sljrizu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Hrm3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yZMKY2FA+/Erc8euElmyhBztfXK4c582DIjZ4BzKyko="
         }
       ]
     },

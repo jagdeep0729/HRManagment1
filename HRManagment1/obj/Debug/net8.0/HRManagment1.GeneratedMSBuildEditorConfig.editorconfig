@@ -300,6 +300,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iT3BlbmluZ0FwcGxpY2FudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SINGAPORE/source/repos/HRManagment1/HRManagment1/Views/JobOpeningApplicants/MyApplications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iT3BlbmluZ0FwcGxpY2FudHNcTXlBcHBsaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SINGAPORE/source/repos/HRManagment1/HRManagment1/Views/JobOpenings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iT3BlbmluZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -314,6 +318,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SINGAPORE/source/repos/HRManagment1/HRManagment1/Views/JobOpenings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iT3BlbmluZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SINGAPORE/source/repos/HRManagment1/HRManagment1/Views/JobOpenings/GetAllJobOpening.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iT3BlbmluZ3NcR2V0QWxsSm9iT3BlbmluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SINGAPORE/source/repos/HRManagment1/HRManagment1/Views/JobOpenings/Index.cshtml]

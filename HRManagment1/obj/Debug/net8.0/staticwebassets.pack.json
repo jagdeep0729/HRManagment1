@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\HRM 2.jpg",
+      "PackagePath": "staticwebassets\\images\\HRM 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hr manament image 1.jpg",
+      "PackagePath": "staticwebassets\\images\\Hr manament image 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\images\\Hrm3.jpg",
+      "PackagePath": "staticwebassets\\images\\Hrm3.jpg"
+    },
+    {
       "Id": "C:\\Users\\SINGAPORE\\source\\repos\\HRManagment1\\HRManagment1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

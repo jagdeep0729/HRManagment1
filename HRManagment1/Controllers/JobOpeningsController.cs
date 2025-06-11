@@ -46,6 +46,11 @@ namespace HRManagment1.Controllers
             return View(jobOpening);
         }
 
+        public async Task<IActionResult> GetAllJobOpening()
+        {
+            return View(await _context.JobOpening.ToListAsync());
+        }
+        
         // GET: JobOpenings/Create
         public IActionResult Create()
         {
