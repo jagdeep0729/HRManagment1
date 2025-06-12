@@ -5,8 +5,9 @@ namespace HRManagment1.Models
 {
     public class JobPositions
     {
-        [Key]
-        public int PositionId { get; set; }
+        [Key]   
+        public int PositionId  { get; set; }
+
         public String Title { get; set; }
         public int DepartmentId { get; set; }
         [ForeignKey("DepartmentId")]

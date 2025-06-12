@@ -7,7 +7,7 @@ namespace HRManagment1.Models
     {
         [Key]
         public int RecordId { get; set; }
-        public int PositionId { get; set; }
+        public int PositionId{ get; set; }
         [ForeignKey("PositionId")]
         public JobPositions JobPositions { get; set; }
         public DateOnly StartDate { get; set; }

@@ -65,7 +65,7 @@ namespace HRManagment1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("JobOpeningId,PositionId,OpenDate,CloseDate,Status")] JobOpening jobOpening)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 _context.Add(jobOpening);
                 await _context.SaveChangesAsync();
@@ -104,7 +104,7 @@ namespace HRManagment1.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 try
                 {

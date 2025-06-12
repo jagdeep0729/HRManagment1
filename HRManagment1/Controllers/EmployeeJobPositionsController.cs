@@ -50,7 +50,7 @@ namespace HRManagment1.Controllers
         public IActionResult Create()
         {
             ViewData["EmployeeId"] = new SelectList(_context.Employee, "EmployeeId", "EmployeeId");
-            ViewData["PositionId"] = new SelectList(_context.Set<JobPositions>(), "PositionId", "PositionId");
+            ViewData["PositionName"] = new SelectList(_context.Set<JobPositions>(), "PositionName", "PositionName");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace HRManagment1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("RecordId,PositionId,StartDate,Enddate,EmployeeId")] EmployeeJobPosition employeeJobPosition)
+        public async Task<IActionResult> Create([Bind("RecordId,PositionName,StartDate,Enddate,EmployeeId")] EmployeeJobPosition employeeJobPosition)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace HRManagment1.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["EmployeeId"] = new SelectList(_context.Employee, "EmployeeId", "EmployeeId", employeeJobPosition.EmployeeId);
-            ViewData["PositionId"] = new SelectList(_context.Set<JobPositions>(), "PositionId", "PositionId", employeeJobPosition.PositionId);
+            ViewData["PositionName"] = new SelectList(_context.Set<JobPositions>(), "PositionId", "PositionId", employeeJobPosition.PositionId);
             return View(employeeJobPosition);
         }
 
@@ -102,7 +102,7 @@ namespace HRManagment1.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 try
                 {

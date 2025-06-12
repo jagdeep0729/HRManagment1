@@ -59,7 +59,7 @@ namespace HRManagment1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TrainingId,TrainingName,Institution,CompletionDate,EmployeeId")] TrainingRecords trainingRecords)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 _context.Add(trainingRecords);
                 await _context.SaveChangesAsync();
@@ -98,7 +98,7 @@ namespace HRManagment1.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 try
                 {

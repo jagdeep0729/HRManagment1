@@ -59,7 +59,7 @@ namespace HRManagment1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("LeaveId,LeaveType,Status,StartDate,EndDate,EmployeeId")] LeaveRecord leaveRecord)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 _context.Add(leaveRecord);
                 await _context.SaveChangesAsync();
@@ -98,7 +98,7 @@ namespace HRManagment1.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
             {
                 try
                 {
