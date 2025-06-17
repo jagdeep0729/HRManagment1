@@ -1,0 +1,32 @@
+﻿@model IEnumerable<HRManagment1.Models.JobOpening>
+
+@{
+    ViewData["Title"] = "GetAllJobOpening";
+}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    @foreach (var item in Model)
+    {
+
+        <div class="col">
+            <div class="card h-100">
+                @*  //<img src = "~/Images/@item.ImageUrl" class="card-img-top" alt="Product Image"> *@
+                <div class="card-body">
+                    <h5 class="card-title">@item.JobPositions</h5>
+                    <p class="card-text">@item.Status</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-primary fw-bold">OpenDate  @item.OpenDate</span>
+                        <a asp-action="ApplyNow" class="btn btn-sm btn-outline-primary">
+                         Apply Now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
