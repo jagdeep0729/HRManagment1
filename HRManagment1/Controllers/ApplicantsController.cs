@@ -71,12 +71,12 @@ namespace HRManagment1.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ApplicantId,Name,Email,Resume,ApplicantDate")] Applicant applicant)
-        { 
+        {
 
             _context.Add(applicant);
             var ApplicantUserId = _context.Users.Where(u => u.Email == applicant.Email).FirstOrDefault().Id;
             var ApplicantRoleId = _context.Roles.Where(r => r.Name == "Applicant").FirstOrDefault().Id;
-            var roleName = _context.Roles.Where( r => r.Name == "Applicant").FirstOrDefault().Name;
+            var roleName = _context.Roles.Where(r => r.Name == "Applicant").FirstOrDefault().Name;
 
             var userRole = new IdentityUserRole<string>
             {
@@ -88,15 +88,15 @@ namespace HRManagment1.Controllers
             return Redirect("/Identity/Account/Login");
 
 
-            
 
-            //if (ModelState.IsValid)
+
+            ////if (ModelState.IsValid)
             //{
             //    _context.Add(applicant);
             //    await _context.SaveChangesAsync();
             //    return RedirectToAction(nameof(Index));
             //}
-            return View(applicant);
+            //return View(applicant);
         }
 
         // GET: Applicants/Edit/5

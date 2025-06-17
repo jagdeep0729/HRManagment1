@@ -18,6 +18,14 @@ namespace HRManagment1.Controllers
             return View();
         }
 
+        public IActionResult Create()
+            {
+                ViewBag.Message = "Welcome to the Home Page!";
+                ViewBag.Date = DateTime.Now;
+
+                return View();
+            }
+        
         public IActionResult Privacy()
         {
             return View();

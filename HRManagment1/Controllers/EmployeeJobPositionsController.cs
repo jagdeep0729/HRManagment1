@@ -126,6 +126,7 @@ namespace HRManagment1.Controllers
             ViewData["PositionId"] = new SelectList(_context.Set<JobPositions>(), "PositionId", "PositionId", employeeJobPosition.PositionId);
             return View(employeeJobPosition);
         }
+        
 
         // GET: EmployeeJobPositions/Delete/5
         public async Task<IActionResult> Delete(int? id)

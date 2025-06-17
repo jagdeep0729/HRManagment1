@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HRManagment1.Models
 {
@@ -13,6 +14,9 @@ namespace HRManagment1.Models
         public string Phone { get; set; }
         public string Status { get; set; }
         public DateOnly HireDate { get; set; }
+        public int DepartmentId { get; set; }
+        [ForeignKey("DepartmentId")]
+        public Department Department { get; set; }
 
         public ICollection<Payroll> Payroll { get; set; }
         public ICollection<EmployeeJobPosition> EmployeeJobPosition { get; set; }

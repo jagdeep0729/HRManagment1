@@ -58,16 +58,11 @@ namespace HRManagment1.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DepartmentId"));
 
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DepartmentId");
-
-                    b.HasIndex("EmployeeId");
 
                     b.ToTable("Department");
                 });
@@ -79,6 +74,9 @@ namespace HRManagment1.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -104,6 +102,8 @@ namespace HRManagment1.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");
+
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Employee");
                 });
@@ -540,15 +540,15 @@ namespace HRManagment1.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("HRManagment1.Models.Department", b =>
+            modelBuilder.Entity("HRManagment1.Models.Employee", b =>
                 {
-                    b.HasOne("HRManagment1.Models.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeId")
+                    b.HasOne("HRManagment1.Models.Department", "Department")
+                        .WithMany("Employees")
+                        .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Employee");
+                    b.Navigation("Department");
                 });
 
             modelBuilder.Entity("HRManagment1.Models.EmployeeJobPosition", b =>
@@ -614,7 +614,7 @@ namespace HRManagment1.Data.Migrations
             modelBuilder.Entity("HRManagment1.Models.JobPositions", b =>
                 {
                     b.HasOne("HRManagment1.Models.Department", "Department")
-                        .WithMany("JobPosition")
+                        .WithMany("JobPositions")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -713,7 +713,9 @@ namespace HRManagment1.Data.Migrations
 
             modelBuilder.Entity("HRManagment1.Models.Department", b =>
                 {
-                    b.Navigation("JobPosition");
+                    b.Navigation("Employees");
+
+                    b.Navigation("JobPositions");
                 });
 
             modelBuilder.Entity("HRManagment1.Models.Employee", b =>

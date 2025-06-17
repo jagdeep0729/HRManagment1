@@ -43,6 +43,15 @@ namespace HRManagment1.Controllers
             return View(employee);
         }
 
+        public async Task<IActionResult> MyProfile()
+        {
+            String username = User.Identity.Name;
+            var getProfile = _context.Employee.Where(a => a.Email == username).FirstOrDefault();
+            return View(getProfile);
+            
+
+        }
+
         // GET: Employees/Create
         public IActionResult Create()
         {

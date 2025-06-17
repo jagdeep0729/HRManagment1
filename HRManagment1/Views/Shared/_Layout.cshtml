@@ -26,7 +26,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
 
-                        
+
                         @if (User.IsInRole("Applicant"))
                         {
                             <li>
@@ -34,8 +34,25 @@
                             </li>
 
                             <li>
-                                <a class="nav-link text-black-dark"asp-area="" asp-controller="JobOpeningApplicant" asp-action="MyApplications">My Applications</a>
+                                <a class="nav-link text-black-dark"asp-area="" asp-controller="JobOpeningApplicants" asp-action="MyApplications">My Applications</a>
                             </li>
+                            <li>
+                                <a class=" nav-link text-dark" asp-area="" asp-controller="JobOpenings" asp-action="GetAllJobOpening"> Apply Job</a>
+                            </li>
+
+                        }
+                        @if (User.IsInRole("Employee"))
+                        {
+                            <li>
+                                <a class=" nav-link text-dark" asp-area="" asp-controller="LeaveRecords" asp-action="Create"> Apply Leave</a>
+                            </li>
+
+                            <li>
+                                <a class=" nav-link text-dark" asp-area="" asp-controller="Employees " asp-action="My Profile"> My Profile</a>
+                            </li>
+                            @* <li>
+                                <a class=" nav-link text-dark" asp-area="" asp-controller="Employee " asp-action="My Profile"> My Profile</a>
+                            </li> *@
                         }
                     </ul>
                     <partial name="_LoginPartial" />

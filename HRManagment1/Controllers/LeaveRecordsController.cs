@@ -18,7 +18,11 @@ namespace HRManagment1.Controllers
         {
             _context = context;
         }
+        public async Task<IActionResult> Leave()
+        {
 
+            return View();
+        }
         // GET: LeaveRecords
         public async Task<IActionResult> Index()
         {
@@ -45,6 +49,7 @@ namespace HRManagment1.Controllers
             return View(leaveRecord);
         }
 
+     
         // GET: LeaveRecords/Create
         public IActionResult Create()
         {

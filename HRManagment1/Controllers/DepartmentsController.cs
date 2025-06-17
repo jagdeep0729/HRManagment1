@@ -20,11 +20,11 @@ namespace HRManagment1.Controllers
         }
 
         // GET: Departments
-        public async Task<IActionResult> Index()
-        {
-            var applicationDbContext = _context.Department.Include(d => d.Employee);
-            return View(await applicationDbContext.ToListAsync());
-        }
+        //public async Task<IActionResult> Index()
+        //{
+            //var applicationDbContext = _context.Department.Include(d => d.Employee);
+            //return View(await applicationDbContext.ToListAsync());
+        //}
 
         // GET: Departments/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -35,7 +35,7 @@ namespace HRManagment1.Controllers
             }
 
             var department = await _context.Department
-                .Include(d => d.Employee)
+                //./*Include(d => d.Employee)*/
                 .FirstOrDefaultAsync(m => m.DepartmentId == id);
             if (department == null)
             {
@@ -57,17 +57,17 @@ namespace HRManagment1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DepartmentId,Name,EmployeeId")] Department department)
-        {
+        //public async Task<IActionResult> Create([Bind("DepartmentId,Name,EmployeeId")] Department department)
+        //{
             //if (ModelState.IsValid)
-            {
-                _context.Add(department);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.EmployeeId);
-            return View(department);
-        }
+            //{
+            //    _context.Add(department);
+            //    await _context.SaveChangesAsync();
+            //    return RedirectToAction(nameof(Index));
+            //}
+            //ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.);
+            //return View(department);
+        //}
 
         // GET: Departments/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -82,7 +82,7 @@ namespace HRManagment1.Controllers
             {
                 return NotFound();
             }
-            ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.EmployeeId);
+            //ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.EmployeeId);
             return View(department);
         }
 
@@ -118,7 +118,7 @@ namespace HRManagment1.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.EmployeeId);
+            //ViewData["EmployeeId"] = new SelectList(_context.Set<Employee>(), "EmployeeId", "EmployeeId", department.EmployeeId);
             return View(department);
         }
 
@@ -131,7 +131,7 @@ namespace HRManagment1.Controllers
             }
 
             var department = await _context.Department
-                .Include(d => d.Employee)
+                //.Include(d => d.Employee)
                 .FirstOrDefaultAsync(m => m.DepartmentId == id);
             if (department == null)
             {
